@@ -1,70 +1,143 @@
-# Getting Started with Create React App
+$ yarn create react-app 
+$ git remote add origin "github"
+$ git checkout -b main
+$ initial commit to repo
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+$When the driver is up next which is me just clone and run yarn start
 
-## Available Scripts
+Frontend Structure
+-$ git checkout-b frontend-structure
+-$ yarn add react-router-dom
+-created folders for components,pages, assets
+Create component files
+-Header.js (add basic code)
+-Footer.js (add basic code)
+$yarn add reactstrap
+-add to src/index.js: imprt 'bootstrap/dist/css....
+-added mock cats
+-added routes to each page
+-styled Header, footer, Notfound page
 
-In the project directory, you can run:
+Step One:
+Create a new branch called - Frontend structure
 
-### `yarn start`
+Step Two:
+Create Directories/Folders
+-Assets
+-Pages
+-Components
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Step Three:
+Create component files
+-Header.js (add basic code)
+-Footer.js (add basic code)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Step Four:
+Create page files
+-Home.js (add basic code)
+-CatIndex.js (add basic code)
+-Catshow.js (add basic code)
+-CatNew.js (add basic code)
+-CatEdit.js (add basic code)
+-NotFound.js (add basic code_
 
-### `yarn test`
+Basic Code Format:
+//Imports
+Import React from 'react'
+//Component declaration
+const App = () => {
+//JSX Return
+ return (
+<div>CatIndex</div>
+)
+}
+export default CatIndex
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Step Five:
+Installs
+-Reactstrap( Component library for Bootstrap)
+Use this command: yarn add bootstrap
+-ReactRouter(
+react-router-dom@6 or yarn bootstrap
 
-### `yarn build`
+Step Six:
+Create a routes for bootstarp  index js
+Add to src/index.js: import 'bootstrap/dist/css/bootstrap.min.css'
+add this command in index as an inport
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Step Seven:
+Create your routes in app.js
+Should look like this...
+<Route path="/catindex" element={<Home/>}/>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Step eight :
+Create a file in the src called MockCats.js
+Create an array of Mythical creatures objects
+-should look like this:
+const mythicalCreatures = [{
+    id:
+  name:
+   age:
+ enjoys:
+image:
+ id:
+  name:
+   age:
+ enjoys:
+image:
+}]
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Step Nine:
+Push Up Notes:
+Hey charlene and austin this is our PR for Frontend-structure branch
+17/20 items are complete. would really like you to take a look and give some feed back
+Github link:
+trello: link:
 
-### `yarn eject`
+% Come back to this step...
+Step Ten
+add UI Features
+-Style Header Component
+ <nav>
+  <a href="#"> add creature</a>
+   <a href="#"> find creature</a>
+    <a href="#"> find creature</a>
+    <a href="#"> className="reister btn">Register</a>
+    </nav>
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Query: Does every color have to be placed in a listing file?
+If you have a navigation bar do you need to add all colors to thr listing file?
+If so it should look  like this $color: colornumber;
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+ Style in the Header main css..
+ * Dont forget to import listing in you main css
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+ This is how you would style your listings in css
 
-## Learn More
+ header {
+color: #gradient
+overflow: auto;
+}
+nav {
+position: center;
+font size: 30px;
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+ a {
+   color: white;
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+&hover {
+ color: blue;
 
-### Code Splitting
+&.register-btn {
+    background: $pink;
+    padding: 10px 15px;
+    text-align: center
+    color: white;
+    border-radius; 5px;
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+-Style Footer Component
+ made by us
+ 
+-style Notfound page (edited) 
+ -add a not found pic with a background 
