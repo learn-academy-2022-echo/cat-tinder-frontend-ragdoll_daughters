@@ -141,3 +141,25 @@ font size: 30px;
  
 -style Notfound page (edited) 
  -add a not found pic with a background 
+
+
+HEADER TEST:
+Step One:
+Create a test coverage branch
+Step Two:
+Create your describe and an it statement
+
+Passed Tests for four pages:
+
+ PASS  src/pages/NotFound.test.js
+ PASS  src/components/Footer.test.js
+ PASS  src/pages/Home.test.js
+ PASS  src/components/Header.test.js
+
+Test Suites: 4 passed, 4 total
+Tests:       4 passed, 4 total
+Snapshots:   0 total
+Time:        6.698 s
+Ran all test suites.
+
+Watch Usage: Press w to show more.

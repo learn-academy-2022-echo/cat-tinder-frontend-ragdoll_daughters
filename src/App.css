@@ -1,6 +1,6 @@
 
-header {
-  background-color: #282c34;
+/* header {
+  background-color: white;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -8,6 +8,10 @@ header {
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+} */
+
+nav {
+  float: right;
 }
 
 

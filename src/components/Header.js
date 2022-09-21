@@ -1,6 +1,7 @@
 
  //Imports
 import React from 'react'
+// import Home from 'src.pages./Home'
 
 //Component declaration
 const Header= () => {
@@ -9,7 +10,14 @@ const Header= () => {
     return (
 
     <div> 
-       <h1>Mythical Tinder</h1> 
+       <header>
+        <nav>
+            <a href="#" className="New btn">New Wildcat</a>
+            <a href="#" className="All btn">All Wildcats</a>
+            <a href="#" className="Show btn">Show Wildcat</a>
+            <a href="#" className="Edit btn">Edit Wildcat</a>
+        </nav>
+       </header>
     </div>
 
     )
