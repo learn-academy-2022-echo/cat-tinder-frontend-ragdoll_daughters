@@ -7,7 +7,7 @@ describe("<Footer />", () => {
     render(
       <BrowserRouter>
         <Footer />
-        </BrowserRouter>
+      </BrowserRouter>
         ) 
     const element = screen.getByText("Created by Vanessa and Brooky")
     expect(element).toBeInTheDocument()

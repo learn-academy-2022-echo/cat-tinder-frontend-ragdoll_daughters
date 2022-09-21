@@ -6,7 +6,11 @@
 
      //JSX Return
     return (
-        <div> home </div>
+        <div className= "page-body"> 
+            
+            <h1>Welcome to Wildcat Tinder</h1>
+            <h2>Where we keep it wild!</h2>
+        </div>
         
         
     )

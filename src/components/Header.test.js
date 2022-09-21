@@ -7,9 +7,9 @@ describe("<Header />", () => {
     render(
       <BrowserRouter>
         <Header />
-        </BrowserRouter>
+      </BrowserRouter>
         ) 
-    const element = screen.getByText("Mythical Tinder")
+    const element = screen.getByText("New Wildcat")
     expect(element).toBeInTheDocument()
   })
 })

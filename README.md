@@ -148,32 +148,18 @@ Step One:
 Create a test coverage branch
 Step Two:
 Create your describe and an it statement
-   PASS  src/components/Header.test.js
- PASS  src/components/Footer.test.js
 
-Test Suites: 2 passed, 2 total
-Tests:       2 passed, 2 total
-Snapshots:   0 total
-Time:        4.418 s, estimated 5 s
+Passed Tests for four pages:
 
- PASS  src/components/Header.test.js
- PASS  src/components/Footer.test.js
- PASS  src/pages/Home.test.js
-
-Test Suites: 3 passed, 3 total
-Tests:       3 passed, 3 total
-Snapshots:   0 total
-Time:        4.893 s
-Ran all test suites related to changed files.
- PASS  src/components/Header.test.js
- PASS  src/components/Footer.test.js
- PASS  src/pages/Home.test.js
  PASS  src/pages/NotFound.test.js
+ PASS  src/components/Footer.test.js
+ PASS  src/pages/Home.test.js
+ PASS  src/components/Header.test.js
 
 Test Suites: 4 passed, 4 total
 Tests:       4 passed, 4 total
 Snapshots:   0 total
-Time:        6.27 s
-Ran all test suites related to changed files.
+Time:        6.698 s
+Ran all test suites.
 
 Watch Usage: Press w to show more.
