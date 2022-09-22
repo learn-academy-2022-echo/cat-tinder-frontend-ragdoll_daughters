@@ -4,17 +4,22 @@ import wildCats from "../mockCats"
 import { BrowserRouter } from 'react-router-dom'
 
 describe("<CatIndex />", () => {
-  it("renders a card for each cat that is passed down to component", () => {
-    render(
+  // user should see the CatIndex page
+    it("renders a card for each cat that is passed down to component", () => {
+      // Arrange
+      render(
         <BrowserRouter>
-         <CatIndex cats={wildCats}/>
+          <CatIndex cats={mockCats}/>
         </BrowserRouter>
       )
-    wildCats.forEach(cat => {
-        const meowElement = screen.getByText(cat.name)
-        expect(meowElement.toBeInTheDocument())
+      // Act
+      wildCats.forEach(cat => {
+        const meowElement = screen.getByText()
+        expect(meowElement).toBeInTheDocument()
+      })
+      // Asserts
+      // expect(element).toBeInTheDocument()
     })
-
-    // expect(element).toBeInTheDocument()
   })
-})
+       
+  
