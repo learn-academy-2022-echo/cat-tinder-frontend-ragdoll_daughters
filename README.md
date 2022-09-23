@@ -163,3 +163,42 @@ Time:        6.698 s
 Ran all test suites.
 
 Watch Usage: Press w to show more.
+
+ PASS  src/pages/CatIndex.test.js (5.42 s)
+  <CatIndex />
+    ✓ renders a card for each cat that is passed down to component (442 ms)
+
+Test Suites: 1 passed, 1 total
+Tests:       1 passed, 1 total
+Snapshots:   0 total
+Time:        9.883 s
+Ran all test suites related to changed files.
+
+Watch Usage: Press w to show more.
+
+ PASS  src/pages/CatShow.test.js
+  ● Console
+
+    console.log
+      1
+
+      at CatShow (src/pages/CatShow.js:9:15)
+
+    console.log
+      1
+
+      at CatShow (src/pages/CatShow.js:14:14)
+
+ PASS  src/pages/CatIndex.test.js
+
+Test Suites: 2 passed, 2 total
+Tests:       2 passed, 2 total
+Snapshots:   0 total
+Time:        3.526 s, estimated 6 s
+Ran all test suites related to changed files.
+
+Watch Usage: Press w to show more.
+
+
+
+
