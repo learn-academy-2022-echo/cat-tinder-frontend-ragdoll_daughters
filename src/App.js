@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import logo from './logo.svg';
 import './App.css';
 import Footer from './components/Footer'
@@ -13,10 +13,23 @@ import { Routes, Route } from "react-router-dom"
 import mockCats from './mockCats'
 
 const App = () => {
-  const [cats, setCats] = useState(mockCats)
+  const [cats, setCats] = useState([])
 
- 
+
+const readCat = () => {
+  fetch('http://localhost:3000/cats')
+    .then(response => response.json())
+    .then(payload => setCats(payload)) 
+    .catch(error => console.log(error))
+}
+console.log(cats)
+
+useEffect(() => {
+  readCat()
+}, [])
+
   return (
+    
     <>
       
       <Header/>
