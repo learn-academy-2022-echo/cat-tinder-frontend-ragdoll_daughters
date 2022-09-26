@@ -22,11 +22,26 @@ const readCat = () => {
     .then(payload => setCats(payload)) 
     .catch(error => console.log(error))
 }
-console.log(cats)
+// console.log(cats)
 
 useEffect(() => {
   readCat()
 }, [])
+
+
+const createCat = (cat) => {
+
+  fetch('http://localhost:3000/cats', {
+    body: JSON.stringify(cat),
+    headers: {
+      'Content-Type':'application/json'
+    },
+    method: 'POST'
+  })
+  .then(response => response.json())
+  .then(payload => readCat())
+  .catch(errors => console.log(errors))
+}
 
   return (
     
@@ -37,7 +52,7 @@ useEffect(() => {
         <Route path="/" element={<Home />}/>
         <Route path="/catindex" element={<CatIndex cats={cats} />} />
         <Route path="/catshow/:id" element={<CatShow cats={cats} />} />
-        <Route path="/catnew" element={<CatNew />} />
+        <Route path="/catnew" element={<CatNew createCat={createCat} />} />
         <Route path="/catedit" element={<CatEdit />} />
         <Route path="/*" element={<NotFound />} />
       </Routes>

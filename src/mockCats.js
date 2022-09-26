@@ -19,7 +19,7 @@ const wildCats = [
         id: 3,
         name: "Juice",
         age: 18,
-        enjoys: "Enjoys Photoshoots and attetion",
+        enjoys: "Enjoys Photoshoots and attention",
         image:
         "https://i.natgeofe.com/n/487a0d69-8202-406f-a6a0-939ed3704693/african-lion_2x3.JPG"
     },

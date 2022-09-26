@@ -12,7 +12,7 @@ a {
   font-size: 30px;
   margin: 0;
   padding: 0;
-  background-color: #020202e8;
+  background-color: rgb(237, 225, 150);
   
 }
 
@@ -32,16 +32,41 @@ a {
 
 
 h2 {
-  color: rgb(38, 240, 62);
+  color: rgb(38, 41, 240);
   text-align: center;
   margin: 0px;
   padding: 0px;
   line-height: 30em; 
-
+ 
 
 }   
+h6 {
+  color: rgb(38, 41, 240);
+  text-align: center;
+  margin: 0px;
+  padding: 0px;
+  line-height: 30em; 
+ 
 
-  
+}  
+
+form {
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+footer {
+  font-size: 8px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+card {
+
+}
 
 
 
