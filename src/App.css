@@ -3,6 +3,7 @@ nav {
   float: right;
   color: blueviolet;
 }
+
 a {
   color: white;
 }
@@ -12,8 +13,7 @@ a {
   font-size: 30px;
   margin: 0;
   padding: 0;
-  background-color: rgb(237, 225, 150);
-  
+  background-color: black;
 }
 
 .page-body {
@@ -22,12 +22,10 @@ a {
 }
 
 
-  h1 {
+h1 {
   text-align: center;
   color: blueviolet;
   padding: 100px;
-
-
 } 
 
 
@@ -37,17 +35,14 @@ h2 {
   margin: 0px;
   padding: 0px;
   line-height: 30em; 
- 
+}  
 
-}   
 h6 {
   color: rgb(38, 41, 240);
   text-align: center;
   margin: 0px;
   padding: 0px;
   line-height: 30em; 
- 
-
 }  
 
 form {
@@ -64,8 +59,19 @@ footer {
   justify-content: space-around;
 }
 
-card {
+.card {
+  margin: 2rem 0;
+}
 
+.cat-index-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color:antiquewhite;
+  text-align: center;
+  color: white;
+  border-color: blue;
+  border-width: 3px;
 }
 
 

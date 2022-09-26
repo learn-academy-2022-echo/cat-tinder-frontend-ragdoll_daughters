@@ -13,6 +13,11 @@ const Header= () => {
     <div> 
        <header>
        <Nav className="header-nav flex-space">
+       <NavItem>
+          <NavLink to="/" className="nav-link">
+            Home
+          </NavLink>
+        </NavItem>
         <NavItem>
           <NavLink to="/catindex" className="nav-link">
             Meet the Cats
@@ -33,6 +38,7 @@ const Header= () => {
           </a>
         </NavItem>
       </Nav>
+      
        </header>
     </div>
 

@@ -42,7 +42,7 @@
           </Label>
           <Input
             name="name"
-            placeholder="Choose a wild name"
+            placeholder="Choose a wild name!"
             type="text"
             onChange={handleCats}
             value={newCat.name}
@@ -54,7 +54,7 @@
           </Label>
           <Input
             name="age"
-            placeholder="How may lives have you used"
+            placeholder="How may lives have you used?"
             type="number"
             onChange={handleCats}
             value={newCat.age}
@@ -66,7 +66,7 @@
           </Label>
           <Input
             name="enjoys"
-            placeholder="What gets your Wildin"
+            placeholder="What gets you Wildin'"
             type="text"
             onChange={handleCats}
             value={newCat.enjoys}

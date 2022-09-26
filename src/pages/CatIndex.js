@@ -7,7 +7,7 @@
 const CatIndex = ({ cats }) => {
   // JSX Return
   return (
-    <main className="display-flex">
+    <main className="cat-index-cards">
       { cats?.map((cat, index) => {
         return (
           <Card
