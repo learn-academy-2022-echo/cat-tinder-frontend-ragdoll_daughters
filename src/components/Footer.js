@@ -7,7 +7,9 @@
      //JSX Return
     return (
         <div>
-          <h3> Created by Vanessa and Brooky</h3>  
+          
+          <h6> Created by <a href="https://vkathryn.github.io/">Vanessa</a> and <a href="https://brookthecoder.com/">Brook The Coder</a></h6>  
+          
         </div>
     )
 }

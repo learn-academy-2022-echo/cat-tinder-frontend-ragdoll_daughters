@@ -1,7 +1,8 @@
 
  //Imports
 import React from 'react'
-// import Home from 'src.pages./Home'
+import { Nav, NavItem } from "reactstrap"
+import { NavLink } from "react-router-dom"
 
 //Component declaration
 const Header= () => {
@@ -11,12 +12,27 @@ const Header= () => {
 
     <div> 
        <header>
-        <nav>
-            <a href="#" className="New btn">New Wildcat</a>
-            <a href="#" className="All btn">All Wildcats</a>
-            <a href="#" className="Show btn">Show Wildcat</a>
-            <a href="#" className="Edit btn">Edit Wildcat</a>
-        </nav>
+       <Nav className="header-nav flex-space">
+        <NavItem>
+          <NavLink to="/catindex" className="nav-link">
+            Meet the Cats
+          </NavLink>
+        </NavItem>
+        <NavItem>
+          <NavLink to="/catnew" className="nav-link">
+            Add a New Cat
+          </NavLink>
+        </NavItem>
+        <NavItem>
+          <a
+            target="blank"
+            href="https://www.lionstigersandbears.org/visit-us"
+            className="nav-link"
+          >
+            Visit a Wildcat!
+          </a>
+        </NavItem>
+      </Nav>
        </header>
     </div>
 
